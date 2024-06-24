@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla';
+    border-radius: 5px;
+}
+input{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+button{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+h1{
+    padding-left: 2rem;
+}
+#message-control{
+    display: block;
+    margin-left: 4em;
+}
+
+
+label{
+    display: block;
+    
+}
+.has-solid-border{
+    border: solid;
+    border-color: rgb(133, 133, 133);
+    width: 90%;
+    margin-top: 1.5em;
+    
+}
+body{
+    background-color: hsl(148, 38%, 91%);
+    padding-top: 15px;
+}
+.form-container{
+    
+    width: 90vw;
+    background-color: white;
+    height: 95vh;
+    margin: auto;
+}
+
+form>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=radio],input[type=checkbox]{
+    display: inline;
+    width: auto;
+}
+
+input,textarea{
+    width: 90%;
+    
+}
+button{
+    width: 90%;
+    margin: auto;
+    background-color: hsl(169, 82%, 27%);
+    
+}
+
+.error{
+    display: block;
+}
+
+
+.checkbox-label{
+    width: 90%;
+}
+
+small{
+    color: red;
+}
+
+textarea{
+    height: 5rem;
+}
+
+@media  (min-width:450px) {
+    
+
+    .form-container{
+        max-width: 1400px;
+    }
+    .same-group{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #first{
+        padding-left: 1.99em;
+        margin-left: 2em;
+        
+    }
+    .has-solid-border{
+        width: auto;
+        
+        
+    }
+    #address-email{
+        display: block;
+        margin-left: 4em;
+    }
+    #queries{
+        display: block;
+        margin-left: 4em;
+
+    }
+    #query-group{
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+    #solid-1{
+        
+        margin-right: 2em;
+        padding-left: 2em;
+        padding-bottom: 1em;
+        padding-top: 1em;
+
+    }
+    #solid-2{
+        
+        margin-left: 2em;
+        padding-left: 2em;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    
+}

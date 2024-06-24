@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+    .form-control {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form id="myForm">
+      <h1>Contact Us</h1>
+      <div class="same-group">
+        <div class="form-control" id="first">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName">
+          <small class="error" id="first-error"></small>
+        </div>
+        <div class="form-control" id="last">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName">
+          <small class="error" id="second-error"></small>
+        </div>
+      </div>
+      <div class="form-control" id="address-email">
+        <label for="email">Email Address *</label>
+        <input type="text" id="email" name="email">
+        <small class="error"></small>
+      </div>
+      <div class="form-control" id="queries">
+        <label>Query type *</label>
+        <div id='query-group'>
+          <label class="has-solid-border" id="solid-1">
+            <input type="radio" name="gender" value="male"> General enquiry
+          
+          </label>
+          <label class="has-solid-border" id="solid-2">
+            <input type="radio" name="gender" value="female"> Support request
+          </label>
+        </div>
+        <small class="error" id="gender-error"></small>
+        
+      </div>
+      <div class="form-control" id="message-control">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message"></textarea>
+        <small class="error" ></small>
+      </div>
+      <div class="form-control" >
+        <label class="checkbox-label">
+          <input type="checkbox" id="terms" name="terms">
+          I agree to being contacted by the team
+        </label>
+        <small class="error"></small>
+      </div>
+      <div class="form-control">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/validator@13.6.0/validator.min.js"></script>
+  <script src="form-validation.js"></script>
+</body>
+</html>
